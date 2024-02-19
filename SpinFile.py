@@ -3,7 +3,8 @@ import Spinner
 def main():
     with open("test-synonyms.txt") as file:
             text = file.read()
-
+    synonym = Spinner.Spinner()
+    synonym.replace()
 
 if __name__ == '__main__':
     main()
