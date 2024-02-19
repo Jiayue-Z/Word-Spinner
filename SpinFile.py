@@ -9,7 +9,7 @@ def main():
     print('Original:', text)
     synonym = Spinner.Spinner()
     for x in range(1,4):
-        print('Option', x, ' ', synonym.replace(text))
+        print('Option', x, ': ', synonym.replace(text))
 
 if __name__ == '__main__':
     main()
