@@ -2,7 +2,7 @@
 import Spinner
 import string
 def main():
-    with open("essay") as file:
+    with open("essay.txt") as file:
             read = file.read()
             lower = read.lower()
             text = lower.translate(str.maketrans('', '', string.punctuation))
