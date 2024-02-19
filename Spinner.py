@@ -27,10 +27,3 @@ class Spinner:
             else:
                 new_text += x + ' '
         return new_text
-
-
-
-
-yes = 'He is a good person and a bad person.'
-test = Spinner()
-print(test.replace(yes))
