@@ -9,8 +9,6 @@ class Spinner:
                 word[1] = word[1].strip()
                 word[1] = word[1].split(',')
                 self.diction[word[0]] = word[1]
-            print(self.diction)
-            print(len(self.diction['person']))
     def replace(self,text):
         essay = text.split()
         new_text = ''
