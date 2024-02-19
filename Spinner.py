@@ -15,7 +15,7 @@ class Spinner:
         for x in essay:
             if x in self.diction:
                 print(self.diction[x])
-                if random.randrange(1,100) > 50:
+                if random.randint(1,100) > 50:
                     if len(self.diction[x]) > 1:
                         new_text += self.diction[x][random.randrange(0, len(self.diction))] + ' '
                     else:
