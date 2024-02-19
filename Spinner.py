@@ -3,7 +3,7 @@ import random
 class Spinner:
     def __init__(self):
         self.diction = {}
-        with open("test-synonyms.txt") as file:
+        with open("synonyms-simplified.txt") as file:
             for line in file:
                 word = line.split(':')
                 word[1] = word[1].strip()
@@ -14,12 +14,8 @@ class Spinner:
         new_text = ''
         for x in essay:
             if x in self.diction:
-                print(self.diction[x])
                 if random.randint(1,100) > 50:
-                    if len(self.diction[x]) > 1:
-                        new_text += self.diction[x][random.randrange(0, len(self.diction))] + ' '
-                    else:
-                        new_text +=  self.diction[x][0] + ' '
+                    new_text += self.diction[x][random.randrange(0, len(self.diction[x]))] + ' '
                 else:
                     new_text += x + ' '
             else:
